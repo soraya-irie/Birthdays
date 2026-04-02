@@ -14,12 +14,15 @@ struct ContentView: View {
     ]
 
     var body: some View {
-        List(friends, id: \.name) { friend in
-            HStack{
-                Text(friend.name)
-                Spacer()
-                Text(friend.birthday, format: .dateTime.month(.wide).day().year())
+        NavigationStack {
+            List(friends, id: \.name) { friend in
+                HStack{
+                    Text(friend.name)
+                    Spacer()
+                    Text(friend.birthday, format: .dateTime.month(.wide).day().year())
+                }
             }
+            .navigationTitle("Birthdays")
         }
     }
 }
