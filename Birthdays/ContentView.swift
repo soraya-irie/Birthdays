@@ -30,6 +30,10 @@ struct ContentView: View {
                 VStack(alignment: .center, spacing: 20) {
                     Text("New Birthday")
                         .font(.headline)
+                    DatePicker(selection: $newDate) {
+                        TextField("Name", text: $newName)
+                            .textFieldStyle(.roundedBorder)
+                    }
                 }
             }
         }
