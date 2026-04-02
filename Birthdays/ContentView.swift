@@ -13,6 +13,9 @@ struct ContentView: View {
         Friend(name: "Jenny Court", birthday: Date(timeIntervalSince1970: 0)),
     ]
 
+    @State private var newName = ""
+    @State private var newDate = Date.now
+
     var body: some View {
         NavigationStack {
             List(friends, id: \.name) { friend in
