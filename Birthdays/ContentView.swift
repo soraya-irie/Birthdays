@@ -34,6 +34,10 @@ struct ContentView: View {
                         TextField("Name", text: $newName)
                             .textFieldStyle(.roundedBorder)
                     }
+                    Button("Save") {
+                        let newFriend = Friend(name: newName, birthday: newDate)
+                    }
+                    .bold()
                 }
             }
         }
