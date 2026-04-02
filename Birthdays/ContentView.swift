@@ -15,7 +15,9 @@ struct ContentView: View {
 
     var body: some View {
         List(friends, id: \.name) { friend in
-
+            HStack{
+                Text(friend.name)
+            }
         }
     }
 }
