@@ -30,7 +30,7 @@ struct ContentView: View {
                 VStack(alignment: .center, spacing: 20) {
                     Text("New Birthday")
                         .font(.headline)
-                    DatePicker(selection: $newDate) {
+                    DatePicker(selection: $newDate, in: Date.distantPast...Date.now, displayedComponents: .date) {
                         TextField("Name", text: $newName)
                             .textFieldStyle(.roundedBorder)
                     }
