@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var friend: [Friend] = []
+    @State private var friend: [Friend] = [
+        Friend(name: "Elton Lin", birthday: .now),
+    ]
 
     var body: some View {
         VStack {
