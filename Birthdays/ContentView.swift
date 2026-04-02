@@ -27,7 +27,10 @@ struct ContentView: View {
             }
             .navigationTitle("Birthdays")
             .safeAreaInset(edge: .bottom) {
-
+                VStack(alignment: .center, spacing: 20) {
+                    Text("New Birthday")
+                        .font(.headline)
+                }
             }
         }
     }
