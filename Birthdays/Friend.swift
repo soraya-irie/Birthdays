@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-struct Friend {
+class Friend {
     var name: String
     var birthday: Date
 }
