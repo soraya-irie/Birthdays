@@ -26,6 +26,9 @@ struct ContentView: View {
                 }
             }
             .navigationTitle("Birthdays")
+            .safeAreaInset(edge: .bottom) {
+
+            }
         }
     }
 }
