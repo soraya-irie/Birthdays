@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State private var friend: [Friend] = [
+    @State private var friends: [Friend] = [
         Friend(name: "Elton Lin", birthday: .now),
         Friend(name: "Jenny Court", birthday: Date(timeIntervalSince1970: 0)),
     ]
