@@ -10,6 +10,7 @@ import SwiftUI
 struct ContentView: View {
     @State private var friend: [Friend] = [
         Friend(name: "Elton Lin", birthday: .now),
+        Friend(name: "Jenny Court", birthday: Date(timeIntervalSince1970: 0)),
     ]
 
     var body: some View {
