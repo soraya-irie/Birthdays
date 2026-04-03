@@ -9,10 +9,7 @@ import SwiftUI
 import SwiftData
 
 struct ContentView: View {
-    @State private var friends: [Friend] = [
-        Friend(name: "Elton Lin", birthday: .now),
-        Friend(name: "Jenny Court", birthday: Date(timeIntervalSince1970: 0)),
-    ]
+    @Query private var friends: [Friend]
 
     @State private var newName = ""
     @State private var newDate = Date.now
