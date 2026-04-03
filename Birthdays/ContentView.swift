@@ -35,7 +35,7 @@ struct ContentView: View {
                     }
                     Button("Save") {
                         let newFriend = Friend(name: newName, birthday: newDate)
-                        friends.append(newFriend)
+                        context.insert(newFriend)
 
                         newName = ""
                         newDate = .now
