@@ -10,6 +10,7 @@ import SwiftData
 
 struct ContentView: View {
     @Query private var friends: [Friend]
+    @Environment(\.modelContext) private var context
 
     @State private var newName = ""
     @State private var newDate = Date.now
