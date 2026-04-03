@@ -17,7 +17,7 @@ struct ContentView: View {
 
     var body: some View {
         NavigationStack {
-            List(friends, id: \.name) { friend in
+            List(friends) { friend in
                 HStack{
                     Text(friend.name)
                     Spacer()
